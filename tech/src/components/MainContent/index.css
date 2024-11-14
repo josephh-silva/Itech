@@ -1,0 +1,310 @@
+
+html {
+    scroll-behavior: smooth; /* Ativa o scroll suave */
+}
+.section-one {
+    background-image: url('../../public/teclado.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 35rem;
+    color: #ffffff;
+
+}
+.apre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+   
+}
+.apre p {
+    padding-top: 2rem;
+    font-weight: 500;
+
+}
+.apre span {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+
+.text-h1-efect, .text-apre-efect, .about, .micro, .lenovo, .samsung, .dell, .job, .job-text{
+    visibility: hidden;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff; /* Cor do texto */
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: #1abc9c; /* Cor de fundo verde claro */
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255, 0.5), /* Sombra interna */
+                7px 7px 20px 0px rgba(0,0,0,0.1), /* Sombra externa */
+                4px 4px 5px 0px rgba(0,0,0,0.1); /* Sombra suave */
+    outline: none;
+}
+
+.btn-16 {
+    border: none;
+    color: #ffffff;
+}
+
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9, /* Sombra clara */
+     -4px -4px 5px 0px #fff9,  /* Sombra clara */
+     7px 7px 20px 0px rgba(0,0,0, 0.2), /* Sombra mais forte */
+     4px 4px 5px 0px rgba(0,0,0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Efeito de hover - Altera o fundo e o efeito da sombra */
+.btn-16:hover {
+    color: #fff; /* Cor do texto no hover */
+    background: #16a085; /* Fundo mais escuro de verde no hover */
+}
+
+/* Quando o mouse passa sobre o botão, muda a posição da sombra */
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%; /* Expande a sombra de forma visível */
+}
+
+/* Efeito de clique no botão */
+.btn-16:active {
+    top: 2px; /* Dá um efeito de pressionamento, movendo o botão */
+}
+
+
+.section-two {
+    margin-top: 10rem;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.section-two h1 {
+    margin-bottom: 3rem;
+}
+
+.section-two p {
+    font-size: 1.2rem;
+}
+
+.section-three {
+    text-align: center;
+   
+    margin-top: 12rem;
+    margin-bottom: 20rem;
+}
+
+.section-three h3 {
+    margin-bottom: 2rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+}
+
+.logos .imgs-logo {
+    width: 5rem;
+}
+
+.section-fuor {
+    background-image: url('../../public/second-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+
+.section-fuor div{
+    display: flex;
+    flex-direction: column;
+}
+.section-fuor p {
+    padding-top: 3rem;
+    padding-left: 7rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.section-fuor .p1, .p2, .p3, .p4{
+    visibility: hidden;
+}
+
+.section-five {
+    min-height: 40vh;
+    margin-bottom: 2rem;
+   
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  
+}
+.section-five #services{
+    margin-top: 20rem;
+}
+.text-secFive {
+    margin-top: 9rem;
+}
+
+.cards-container {
+    margin-top: 15rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+}
+
+.cards-container .card {
+    position: relative;
+    width: 22rem;
+    height: 19rem;
+    background: rgba(0, 123, 255, 0.05);
+    backdrop-filter: blur(10rem); 
+    color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards-container .card:hover {
+    height: 25rem;
+}
+
+.cards-container .card .box-img {
+    position: absolute;
+    width: 20rem;
+    height: 12rem;
+    border-radius: 2rem;
+    top: 1rem;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.cards-container .card .box-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards-container .card:hover .box-img {
+    top: -6rem;
+    scale: .75;
+    box-shadow: 0 2rem 5rem rgba(0, 0, .2);
+}
+
+.cards-container .card .text-card {
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    padding: 0 2rem;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.cards-container .card:hover .text-card {
+    top: 10rem;
+    height: 20rem;
+}
+
+.cards-container .card .text-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+@media(max-width: 709px) {
+    .apre{
+       
+        text-align: center;
+    }
+}
+@media(min-width: 320px) and (max-width: 376px){
+    .apre{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .apre span{
+        font-size: 0.9rem;
+    }
+    .logos{
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
+        min-height: 20rem;
+    }
+    .section-fuor{
+       min-height: 90vh;
+       color: #000000;
+    }
+    .section-fuor .p1{
+        font-size: 1.3rem;
+        color: #000000;
+    }
+    .section-fuor .p2{
+        font-size: 1.3rem;
+        color: #000000;
+    }
+    .section-fuor .p3{
+        font-size: 1.3rem;
+        color: #000000;
+    }
+    .section-fuor .p4{
+        font-size: 1.3rem;
+        color: #000000;
+    }  
+    .text-secFive p{
+        
+        
+        width: 17rem;
+        margin-left: 3rem;
+    }
+}
